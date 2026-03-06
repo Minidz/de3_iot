@@ -1,0 +1,34 @@
+iot wokwi
+- thiết kế, đấu nối
+- nhận dữ liệu từ mqtt (điều khiển thiết bị, hiển thị dữ liệu lên lcd)
+- điều khiển cảm biến (ldr,dht, giả lập) -> hiển thị lên lcd, gửi lên mqtt
+- lcd i2c (hiển thị trạng thái wifi, mqtt 2 dòng đầu, hiển thị giá trị cảm biến, trạng thái thiết bị, dữ liệu nhận được từ mqt)
+- điều khiển thiết bị (led, buzz, servo)
+
+- sử dụng cảm biến: LDR, DHT, ultrasonic và 1 cảm biến giả lập
+- điều khiển thiết bị:
+    + 1 thiết bị điều khiển bằng cảm biến
+    + 1 thiết bị điều khiển bằng dữ liệu true/false nhận từ MQTT
+- hiển thị trên LCD I2C:
+    + dòng 1 – trạng thái WiFi
+    + dòng 2 – trạng thái MQTT
+    + dòng 3 – giá trị cảm biến
+    + dòng 4 – dữ liệu chuỗi nhận từ MQTT
+
+python
+- nhận diện nhãn hình 
+- từ nhãn gửi lên mqtt, api
+
+
+
+web
+- hiển thị
+- nhận từ mqtt -> hiện lên web (cảm biến)
+- gửi từ web -> mqtt (nút, văn bản)
+
+- kết nối csdl
+- nhận từ api thêm vào csdl
+- lấy ra hiển thị lên web danh sách
+
+
+.venv\Scripts\activate 
